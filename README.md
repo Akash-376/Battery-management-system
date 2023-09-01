@@ -36,6 +36,7 @@ Before you begin, ensure you have met the following requirements:
 git clone <https://github.com/Akash-376/Battery-management-system.git>
 ```
 2. Navigate to the project directory:
+   In which POM.xml is visible
 ```
 cd Battery-management-system
 ```
