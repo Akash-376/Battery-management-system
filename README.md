@@ -33,7 +33,7 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 1. Clone the repository:
 ```
-git clone <repository-url>
+git clone <https://github.com/Akash-376/Battery-management-system.git>
 ```
 2. Navigate to the project directory:
 ```
