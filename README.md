@@ -73,6 +73,13 @@ To create a new battery instance, send a POST request to:
 ```
 http://localhost:8080/nunam/battery
 ```
+Note: In the payload, you only need to send the battery model (data type: String) in the format provided below.
+```
+{
+    "battery_model":"abc"
+}
+```
+
 ### Retrieving Detailed Information about a Battery
 To retrieve detailed information about a specific battery, send a GET request to:
 ```
