@@ -46,7 +46,7 @@ mvn clean install
 ```
 
 ## Configuration
-1. Create a database named: nunam_batteries
+1. Create the database named 'nunam_batteries' using MySQL Workbench
 2. Open application.properties in the src/main/resources directory.
 3. Configure your database settings:
 ```
