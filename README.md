@@ -80,16 +80,18 @@ Note: In the payload, you only need to send the battery model (data type: String
 }
 ```
 
-### Retrieving Detailed Information about a Battery
-To retrieve detailed information about a specific battery, send a GET request to:
-```
-http://localhost:8080/nunam/battery/{batteryId}
-```
 ### Starting Data Transmission from a Battery
 To start sending data from a battery, send a POST request to:
 ```
 http://localhost:8080/nunam/battery/startsendingdata/{batteryId}
 ```
+
+### Retrieving Detailed Information about a Battery
+To retrieve detailed information about a specific battery, send a GET request to:
+```
+http://localhost:8080/nunam/battery/{batteryId}
+```
+
 ### Retrieving All Data Entries of a battery
 To retrieve all data for a specific battery, send a GET request to:
 ```
