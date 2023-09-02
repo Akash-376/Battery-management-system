@@ -55,7 +55,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.username=root
 spring.datasource.password=root
 ```
-
+Replace username and password with yours.
 
 ## Running the Application
 1. Run the application using Maven:
