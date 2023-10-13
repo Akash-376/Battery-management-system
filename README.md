@@ -46,11 +46,11 @@ mvn clean install
 ```
 
 ## Configuration
-1. Create the database named 'nunam_batteries' using MySQL Workbench
+1. Create the database named 'smart_batteries' using MySQL Workbench
 2. Open application.properties in the src/main/resources directory.
 3. Configure your database settings:
 ```
-spring.datasource.url=jdbc:mysql://localhost:3306/nunam_batteries
+spring.datasource.url=jdbc:mysql://localhost:3306/smart_batteries
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.username=root
 spring.datasource.password=root
@@ -71,7 +71,7 @@ Swagger documentation is available at http://localhost:8088/swagger-ui.html. You
 ### Creating a New Battery
 To create a new battery instance, send a POST request to:
 ```
-http://localhost:8080/nunam/battery
+http://localhost:8080/smart_battery/battery
 ```
 Note: In the payload, you only need to send the battery model (data type: String) in the format provided below.
 ```
@@ -83,39 +83,39 @@ Note: In the payload, you only need to send the battery model (data type: String
 ### Starting Data Transmission from a Battery
 To start sending data from a battery, send a POST request to:
 ```
-http://localhost:8080/nunam/battery/startsendingdata/{batteryId}
+http://localhost:8080/smart_battery/battery/startsendingdata/{batteryId}
 ```
 
 ### Retrieving Detailed Information about a Battery
 To retrieve detailed information about a specific battery, send a GET request to:
 ```
-http://localhost:8080/nunam/battery/{batteryId}
+http://localhost:8080/smart_battery/battery/{batteryId}
 ```
 
 ### Retrieving All Data Entries of a battery
 To retrieve all data for a specific battery, send a GET request to:
 ```
-http://localhost:8080/nunam/battery/info/{batteryId}
+http://localhost:8080/smart_battery/battery/info/{batteryId}
 ```
 ### Retrieving the Latest Voltage Record
 To retrieve the latest voltage record for a specific battery, send a GET request to:
 ```
-http://localhost:8080/nunam/battery/voltage/{batteryId}
+http://localhost:8080/smart_battery/battery/voltage/{batteryId}
 ```
 ### Retrieving the Latest Current Record
 To retrieve the latest current record for a specific battery, send a GET request to:
 ```
-http://localhost:8080/nunam/battery/current/{batteryId}
+http://localhost:8080/smart_battery/battery/current/{batteryId}
 ```
 ### Retrieving the Latest Temperature Record
 To retrieve the latest temperature record for a specific battery, send a GET request to:
 ```
-http://localhost:8080/nunam/battery/temperature/{batteryId}
+http://localhost:8080/smart_battery/battery/temperature/{batteryId}
 ```
 ### Retrieving Battery Data Entries Within a Time Range
 To retrieve battery data entries within a specific time range, send a GET request to:
 ```
-http://localhost:8080/nunam/battery/track/{batteryId}/{startTime}/{endTime}
+http://localhost:8080/smart_battery/battery/track/{batteryId}/{startTime}/{endTime}
 ```
 Example of time : 2023-08-31T21:10:17
 
@@ -123,7 +123,7 @@ Replace {batteryId}, {startTime}, and {endTime} with the appropriate values.
 
 ## Contact
 
-We appreciate your interest in Nunam Battery Monitoring System. If you have any questions, feedback, or need support, you can reach out to us through the following channels:
+We appreciate your interest in smart_battery Battery Monitoring System. If you have any questions, feedback, or need support, you can reach out to us through the following channels:
 
 - **Email**: For general inquiries or support, you can contact us at akchauhan376@gmail.com. 📧
 
@@ -134,7 +134,7 @@ We appreciate your interest in Nunam Battery Monitoring System. If you have any 
 
 <p align="center">
   🙏🏻🙏🏻🙏🏻<br>
-  <b> Nunam Battery Monitoring System</b>
+  <b>Battery Management System</b>
 </p>
 
 ---
