@@ -1,4 +1,4 @@
-<h1 align="center"> Nunam Battery Monitoring System</h1>
+<h1 align="center"> Battery Management System</h1>
 
 <img src="https://i.ytimg.com/vi/w1VjDBhL82k/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB220PBDbEOUsKkWmK0gCdezmCKyQ" alt="Image Description" width="100%" height="350">
 
