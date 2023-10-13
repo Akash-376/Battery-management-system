@@ -71,7 +71,7 @@ Swagger documentation is available at http://localhost:8088/swagger-ui.html. You
 ### Creating a New Battery
 To create a new battery instance, send a POST request to:
 ```
-http://localhost:8080/smart_battery/battery
+http://localhost:8080/smart_battery/
 ```
 Note: In the payload, you only need to send the battery model (data type: String) in the format provided below.
 ```
@@ -83,39 +83,39 @@ Note: In the payload, you only need to send the battery model (data type: String
 ### Starting Data Transmission from a Battery
 To start sending data from a battery, send a POST request to:
 ```
-http://localhost:8080/smart_battery/battery/startsendingdata/{batteryId}
+http://localhost:8080/smart_battery/startsendingdata/{batteryId}
 ```
 
 ### Retrieving Detailed Information about a Battery
 To retrieve detailed information about a specific battery, send a GET request to:
 ```
-http://localhost:8080/smart_battery/battery/{batteryId}
+http://localhost:8080/smart_battery/{batteryId}
 ```
 
 ### Retrieving All Data Entries of a battery
 To retrieve all data for a specific battery, send a GET request to:
 ```
-http://localhost:8080/smart_battery/battery/info/{batteryId}
+http://localhost:8080/smart_battery/info/{batteryId}
 ```
 ### Retrieving the Latest Voltage Record
 To retrieve the latest voltage record for a specific battery, send a GET request to:
 ```
-http://localhost:8080/smart_battery/battery/voltage/{batteryId}
+http://localhost:8080/smart_battery/voltage/{batteryId}
 ```
 ### Retrieving the Latest Current Record
 To retrieve the latest current record for a specific battery, send a GET request to:
 ```
-http://localhost:8080/smart_battery/battery/current/{batteryId}
+http://localhost:8080/smart_battery/current/{batteryId}
 ```
 ### Retrieving the Latest Temperature Record
 To retrieve the latest temperature record for a specific battery, send a GET request to:
 ```
-http://localhost:8080/smart_battery/battery/temperature/{batteryId}
+http://localhost:8080/smart_battery/temperature/{batteryId}
 ```
 ### Retrieving Battery Data Entries Within a Time Range
 To retrieve battery data entries within a specific time range, send a GET request to:
 ```
-http://localhost:8080/smart_battery/battery/track/{batteryId}/{startTime}/{endTime}
+http://localhost:8080/smart_battery/track/{batteryId}/{startTime}/{endTime}
 ```
 Example of time : 2023-08-31T21:10:17
 
