@@ -1,16 +1,16 @@
-package com.nunam.service;
+package com.smartBattery.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.nunam.exception.BatteryException;
-import com.nunam.model.Battery;
-import com.nunam.model.BatteryData;
-import com.nunam.model.BatteryInfo;
-import com.nunam.repository.BatteryDataRepository;
-import com.nunam.repository.BatteryRepository;
+import com.smartBattery.exception.BatteryException;
+import com.smartBattery.model.Battery;
+import com.smartBattery.model.BatteryData;
+import com.smartBattery.model.BatteryInfo;
+import com.smartBattery.repository.BatteryDataRepository;
+import com.smartBattery.repository.BatteryRepository;
 
 @Service
 public class BatteryServiceImpl implements BatteryService{

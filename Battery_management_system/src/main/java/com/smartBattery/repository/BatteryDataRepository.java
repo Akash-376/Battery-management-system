@@ -1,4 +1,4 @@
-package com.nunam.repository;
+package com.smartBattery.repository;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -8,8 +8,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.nunam.model.Battery;
-import com.nunam.model.BatteryData;
+import com.smartBattery.model.Battery;
+import com.smartBattery.model.BatteryData;
 
 
 public interface BatteryDataRepository extends JpaRepository<BatteryData, Integer>{

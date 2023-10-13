@@ -1,4 +1,4 @@
-package com.nunam.exception;
+package com.smartBattery.exception;
 
 import java.time.LocalDateTime;
 

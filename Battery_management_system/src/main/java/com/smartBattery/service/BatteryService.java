@@ -1,8 +1,8 @@
-package com.nunam.service;
+package com.smartBattery.service;
 
-import com.nunam.exception.BatteryException;
-import com.nunam.model.Battery;
-import com.nunam.model.BatteryInfo;
+import com.smartBattery.exception.BatteryException;
+import com.smartBattery.model.Battery;
+import com.smartBattery.model.BatteryInfo;
 
 public interface BatteryService {
 	/**

@@ -1,4 +1,4 @@
-package com.nunam.controller;
+package com.smartBattery.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,17 +10,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nunam.model.Battery;
-import com.nunam.model.BatteryInfo;
-import com.nunam.service.BatteryDataService;
-import com.nunam.service.BatteryService;
+import com.smartBattery.model.Battery;
+import com.smartBattery.model.BatteryInfo;
+import com.smartBattery.service.BatteryDataService;
+import com.smartBattery.service.BatteryService;
 
 /**
  * Controller class that handles HTTP requests related to battery operations.
  */
 
 @RestController
-@RequestMapping("/nunam") // Set the base URL here
+@RequestMapping("/smart_battery") // Set the base URL here
 public class BatteryController {
 	
 	@Autowired

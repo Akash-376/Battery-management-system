@@ -1,4 +1,4 @@
-package com.nunam.exception;
+package com.smartBattery.exception;
 
 /**
  * Custom exception class to represent exceptions related to battery data operations.

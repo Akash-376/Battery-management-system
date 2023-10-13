@@ -1,14 +1,14 @@
-package com.nunam.service;
+package com.smartBattery.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.data.domain.Pageable;
 
-import com.nunam.exception.BatteryDataException;
-import com.nunam.exception.BatteryException;
-import com.nunam.model.BatteryData;
-import com.nunam.model.BatteryInfo;
+import com.smartBattery.exception.BatteryDataException;
+import com.smartBattery.exception.BatteryException;
+import com.smartBattery.model.BatteryData;
+import com.smartBattery.model.BatteryInfo;
 
 public interface BatteryDataService {
 	

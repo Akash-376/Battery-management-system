@@ -1,4 +1,4 @@
-package com.nunam.model;
+package com.smartBattery.model;
 import java.time.LocalDateTime;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;

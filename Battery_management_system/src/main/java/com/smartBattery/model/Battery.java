@@ -1,4 +1,4 @@
-package com.nunam.model;
+package com.smartBattery.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

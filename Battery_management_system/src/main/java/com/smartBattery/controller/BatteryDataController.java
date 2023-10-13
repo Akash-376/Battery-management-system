@@ -1,4 +1,4 @@
-package com.nunam.controller;
+package com.smartBattery.controller;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -14,15 +14,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nunam.model.BatteryData;
-import com.nunam.service.BatteryDataService;
+import com.smartBattery.model.BatteryData;
+import com.smartBattery.service.BatteryDataService;
 
 /**
  * Controller class that handles HTTP requests related to battery data operations.
  */
 
 @RestController
-@RequestMapping("/nunam")
+@RequestMapping("/smart_battery")
 public class BatteryDataController {
 	
 	@Autowired
