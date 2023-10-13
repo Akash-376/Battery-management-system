@@ -36,7 +36,7 @@ public class BatteryController {
      * @param battery The battery instance to be created.
      * @return ResponseEntity with the saved Battery instance and HttpStatus OK.
      */
-	@PostMapping("/battery")
+	@PostMapping("/")
 	public ResponseEntity<Battery> createBatteryHandler (@RequestBody Battery battery){
 		Battery savedBattery = batteryService.createNewBattery(battery);
 		
@@ -50,7 +50,7 @@ public class BatteryController {
      * @param batteryId The identifier of the battery to retrieve information for.
      * @return ResponseEntity with the BatteryInfo instance containing battery details and HttpStatus OK.
      */
-	@GetMapping("/battery/{batteryId}")
+	@GetMapping("/{batteryId}")
 	public ResponseEntity<BatteryInfo> getBatteryInfoHandler(@PathVariable Integer batteryId){
 		
 		BatteryInfo batteryInfo = batteryService.getBatteryLatestDetails(batteryId);
@@ -66,7 +66,7 @@ public class BatteryController {
      * @param batteryId The identifier of the battery to start sending data from.
      * @return ResponseEntity with a success message and HttpStatus OK.
      */
-	@PostMapping("/battery/startsendingdata/{batteryId}")
+	@PostMapping("/startsendingdata/{batteryId}")
 	public ResponseEntity<String> startSendingDataHandler(@PathVariable Integer batteryId){
 		
 		Battery currentBatteryInstance = batteryService.getBatteryById(batteryId);
@@ -83,7 +83,7 @@ public class BatteryController {
      * @param batteryId The identifier of the battery whose data needs to be sent to the database.
      * @return ResponseEntity with HttpStatus OK.
      */
-	@PostMapping("/battery/senddata/{batteryId}")
+	@PostMapping("/senddata/{batteryId}")
 	public ResponseEntity<Void> sendBatteryDataToDBHandler(@PathVariable Integer batteryId){
 		
 		batteryService.sendBatteryDataToDB(batteryId);

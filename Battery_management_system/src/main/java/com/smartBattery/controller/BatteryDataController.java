@@ -34,7 +34,7 @@ public class BatteryDataController {
      * @param batteryId The identifier of the battery to retrieve data for.
      * @return ResponseEntity with the list of BatteryData instances and HttpStatus OK.
      */
-	@GetMapping("/battery/info/{batteryId}")
+	@GetMapping("/info/{batteryId}")
 	public ResponseEntity<List<BatteryData>> allInfoHandler(@PathVariable Integer batteryId){
 		
 		List<BatteryData> dataList = batteryDataService.getAllInfoOfABatteryById(batteryId);
@@ -50,7 +50,7 @@ public class BatteryDataController {
      * @param batteryId The identifier of the battery to retrieve voltage for.
      * @return ResponseEntity with the latest voltage value and HttpStatus OK.
      */
-	@GetMapping("/battery/voltage/{batteryId}")
+	@GetMapping("/voltage/{batteryId}")
 	public ResponseEntity<Double> getVoltageHandler(@PathVariable Integer batteryId){
 		
 		
@@ -65,7 +65,7 @@ public class BatteryDataController {
      * @param batteryId The identifier of the battery to retrieve current for.
      * @return ResponseEntity with the latest current value and HttpStatus OK.
      */
-	@GetMapping("/battery/current/{batteryId}")
+	@GetMapping("/current/{batteryId}")
 	public ResponseEntity<Double> getCurrenteHandler(@PathVariable Integer batteryId){
 		
 		
@@ -80,7 +80,7 @@ public class BatteryDataController {
      * @param batteryId The identifier of the battery to retrieve temperature for.
      * @return ResponseEntity with the latest temperature value and HttpStatus OK.
      */
-	@GetMapping("/battery/temperature/{batteryId}")
+	@GetMapping("/temperature/{batteryId}")
 	public ResponseEntity<Double> getTemperatureHandler(@PathVariable Integer batteryId){
 		
 		
@@ -97,7 +97,7 @@ public class BatteryDataController {
      * @param endTime The end time of the time range.
      * @return ResponseEntity with the list of BatteryData instances and HttpStatus OK.
      */
-	@GetMapping("/battery/track/{batteryId}/{startTime}/{endTime}")
+	@GetMapping("/track/{batteryId}/{startTime}/{endTime}")
 	public ResponseEntity<List<BatteryData>> trackRecordHandler(@PathVariable Integer batteryId, @PathVariable LocalDateTime startTime, @PathVariable LocalDateTime endTime){
 		
 		List<BatteryData> dataList = batteryDataService.trackRecordWithIdAndTimeStamp(batteryId, startTime, endTime);
