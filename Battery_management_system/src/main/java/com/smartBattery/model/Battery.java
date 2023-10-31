@@ -76,7 +76,7 @@ public class Battery {
 						String payLoad = objectMapper.writeValueAsString(batteryData);
 						
 						// post request for this endpoint (to continuously sending data from battery to server)
-						HttpPost request = new HttpPost("http://localhost:8080/nunam/battery/senddata/"+this.batteryId);
+						HttpPost request = new HttpPost("http://localhost:8080/smart_battery/senddata/"+this.batteryId);
 						
 						StringEntity params = new StringEntity(payLoad, "UTF-8");
 						request.addHeader("content-type", "application/json");
